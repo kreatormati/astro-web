@@ -1,6 +1,16 @@
 ---
-import layout from "../layouts/layout.astro";
+import Social from './Social.astro';
 ---
-<footer class="flex items-end">
-    <p>kreator_mati</p>
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
 </footer>

@@ -1,0 +1,7 @@
+---
+import Layout from "../layouts/layout.astro";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const title = "Blog";
+---
+<Layout title={title}>
+</Layout>
