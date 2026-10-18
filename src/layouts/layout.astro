@@ -1,0 +1,16 @@
+---
+const websiteTitle = "kreator_mati";
+const {title} = Astro.props
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title} | {websiteTitle}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
